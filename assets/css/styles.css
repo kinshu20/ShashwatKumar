@@ -731,7 +731,7 @@ img {
   color: #fff;
 }
 .project_img {
-  width: 232px;
+  width: 350px;
   justify-self: center;
 }
 .button-white {
@@ -897,13 +897,17 @@ img {
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 567px) {
+  .about_img {
+    width: 275px;
+  }
   .blue-blob {
     position: absolute;
     z-index: -2;
-    top: -60%;
+    top: -90%;
     width: 20rem;
-
+    left: -10%;
     opacity: 50%;
+    filter: drop-shadow(2px 0 4px rgba(31, 38, 135, 0.37));
   }
 
   .glass {
@@ -930,7 +934,10 @@ img {
   }
   .home_content {
     grid-template-columns: 0.25fr 3fr;
-    padding-top: 1rem;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .home_blob {
     width: 180px;
@@ -958,7 +965,7 @@ img {
     padding: 0 0.5rem;
   }
   .project_img {
-    width: 200px;
+    width: 300px;
   }
   .testimonial_data,
   .testimonial_header {
@@ -976,6 +983,28 @@ img {
 }
 /* For medium devices */
 @media screen and (min-width: 568px) {
+  .blue-blob {
+    position: absolute;
+    z-index: -2;
+    top: -110%;
+    width: 25rem;
+    right: -5%;
+    opacity: 50%;
+    filter: drop-shadow(2px 0 4px rgba(31, 38, 135, 0.37));
+  }
+
+  .glass {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    z-index: -1;
+    left: 27%;
+    background: rgba(252, 241, 241, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 5rem;
+  }
   .home_content {
     grid-template-columns: max-content 1fr 1fr;
   }
@@ -1012,6 +1041,29 @@ img {
 }
 /* For large devices */
 @media screen and (min-width: 768px) {
+  .blue-blob {
+    position: absolute;
+    z-index: -2;
+    top: -80%;
+    width: 30rem;
+    right: 5%;
+    opacity: 50%;
+    filter: drop-shadow(2px 0 4px rgba(31, 38, 135, 0.37));
+  }
+
+  .glass {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    z-index: -1;
+    left: 30%;
+    background: rgba(252, 241, 241, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 50%;
+  }
+
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -1177,6 +1229,30 @@ img {
   }
 }
 @media screen and (min-width: 1024px) {
+  .blue-blob {
+    position: absolute;
+    z-index: -2;
+    top: -100%;
+    width: 40rem;
+    right: -15%;
+    filter: drop-shadow(2px 0 4px rgba(31, 38, 135, 0.37));
+
+    opacity: 50%;
+  }
+
+  .glass {
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    z-index: -1;
+    left: 26%;
+    background: rgba(252, 241, 241, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 50%;
+  }
+
   .header,
   .main,
   .footer_container {
